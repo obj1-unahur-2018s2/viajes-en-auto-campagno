@@ -30,7 +30,7 @@ object lucia {
 	method precioViaje(cliente, kms) { return chofer.precioViaje(cliente, kms)
 		}		
 }
-		
+	
 	
 
 	
