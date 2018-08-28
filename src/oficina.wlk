@@ -18,7 +18,7 @@ method intercambiarChoferes() {
 	_chofer2 = _choferAux;
 }
 method choferElegidoParaViaje(cliente, kms) { 
-	if ( _chofer1.precioViaje(cliente, kms) > _chofer2.precioViaje(cliente,kms)) { return _chofer2.precioViaje(cliente,kms)}
-	else { return _chofer1.precioViaje(cliente,kms) }
+	if ( (_chofer1.precioViaje(cliente, kms)-30) > _chofer2.precioViaje(cliente,kms)) { return _chofer2 }
+	else { return _chofer1 }
 }
 }
